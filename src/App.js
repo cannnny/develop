@@ -1,11 +1,23 @@
+import "./reset.css";
 import "./App.scss";
+import { IoIosArrowBack, IoIosCall } from "react-icons/io";
+import { HiOutlineSearch } from "react-icons/hi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <div className="container header-inner">
-          <p>Pawmo</p>
+        <div className="header-inner">
+          <div className="header-left">
+            <IoIosArrowBack className="menu-icons" size={"2rem"} />
+            <p>Pawmo</p>
+          </div>
+          <div className="header-right">
+            <HiOutlineSearch className="menu-icons" size={"2rem"} />
+            <IoIosCall className="menu-icons" size={"2rem"} />
+            <GiHamburgerMenu className="menu-icons" size={"2rem"} />
+          </div>
         </div>
       </header>
       <div className="main">
@@ -18,7 +30,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <div className="container footer-inner"></div>
+        <div className="footer-inner"></div>
       </footer>
     </div>
   );
