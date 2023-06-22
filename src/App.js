@@ -21,7 +21,9 @@ function App() {
         </div>
       </header>
       <div className="main">
-        <img src="#" alt="" />
+        <div className="main-img">
+          <img src="/pawmo1.png" alt="" />
+        </div>
         <div className="message-wrapper">
           <div className="message">
             <p>Hi!</p>

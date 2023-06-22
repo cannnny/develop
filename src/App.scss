@@ -24,8 +24,12 @@ header {
     justify-content: center;
     margin-right: auto;
 
-    p {
+    .menu-icons {
       margin-left: 5px;
+    }
+
+    p {
+      margin-left: 10px;
       font-size: 23px;
       color: #4b4b4b;
     }
@@ -38,6 +42,49 @@ header {
 
     .menu-icons {
       margin: 7px;
+    }
+  }
+}
+
+.main {
+  &-img {
+    height: 450px;
+    margin-top: 40px;
+  }
+
+  .message-wrapper {
+    height: 200px;
+    background-color: #e7e7e7;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+
+    .message {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    & p {
+      display: inline-block;
+      position: relative;
+      margin: 20px;
+      padding: 8px 10px;
+      max-width: 250px;
+      border-radius: 14px;
+      background-color: #30e852;
+      font-size: 15px;
+    }
+
+    & p:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: -19px;
+      border: 8px solid transparent;
+      border-left: 18px solid #30e852;
+      -webkit-transform: rotate(-35deg);
+      transform: rotate(-35deg);
     }
   }
 }
