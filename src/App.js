@@ -1,8 +1,10 @@
 import "./reset.css";
 import "./App.scss";
 import { IoIosArrowBack, IoIosCall } from "react-icons/io";
-import { HiOutlineSearch } from "react-icons/hi";
+import { HiOutlineSearch, HiMicrophone } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsPlusLg } from "react-icons/bs";
+import { AiFillCamera, AiOutlinePicture, AiOutlineSmile } from "react-icons/ai";
 
 function App() {
   return (
@@ -32,7 +34,19 @@ function App() {
         </div>
       </div>
       <footer>
-        <div className="footer-inner"></div>
+        <div className="footer-inner">
+          <div className="footer-left">
+            <BsPlusLg className="menu-icons" size={"2rem"} />
+            <AiFillCamera className="menu-icons" size={"2rem"} />
+            <AiOutlinePicture className="menu-icons" size={"2rem"} />
+          </div>
+          <div className="footer-right">
+            <div className="msgbox">
+              <AiOutlineSmile className="smile menu-icons" size={"2rem"} />
+            </div>
+            <HiMicrophone className="menu-icons" size={"2rem"} />
+          </div>
+        </div>
       </footer>
     </div>
   );
