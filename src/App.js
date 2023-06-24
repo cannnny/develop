@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./App.scss";
+import React, { useState } from "react";
 import { IoIosArrowBack, IoIosCall } from "react-icons/io";
 import { HiOutlineSearch, HiMicrophone } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,6 +8,12 @@ import { BsPlusLg } from "react-icons/bs";
 import { AiFillCamera, AiOutlinePicture, AiOutlineSmile } from "react-icons/ai";
 
 function App() {
+  const [active, setActive] = useState(false);
+
+  const classToggle = () => {
+    setActive(!active);
+  };
+
   return (
     <div className="App">
       <header>
@@ -24,12 +31,12 @@ function App() {
       </header>
       <div className="main">
         <div className="main-img">
-          <img src="/pawmo1.png" alt="" />
+          <img src={active ? "/pawmo1.png" : "/pawmo2.png"} alt="" />
         </div>
         <div className="message-wrapper">
           <div className="message">
-            <p>Hi!</p>
-            <p>Hello Pawmo!</p>
+            <p onClick={classToggle}>Hi!</p>
+            <p onClick={classToggle}>Hello Pawmo!</p>
           </div>
         </div>
       </div>
