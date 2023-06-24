@@ -32,7 +32,6 @@ function App() {
       <div className="main">
         <div className="main-img">
           <img src={active ? "/pawmo1.png" : "/pawmo2.png"} alt="" />
-          <audio src={active ? "" : "/moppa.mp3"} autoPlay />
         </div>
         <div className="message-wrapper">
           <div className="message">
