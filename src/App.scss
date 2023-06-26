@@ -2,7 +2,7 @@
 
 * {
   font-family: "Noto Sans", sans-serif;
-  max-width: 400px;
+  max-width: 375px;
 }
 
 header {
@@ -48,12 +48,11 @@ header {
 
 .main {
   &-img {
-    height: 450px;
-    margin-top: 40px;
+    margin: 40px 0;
   }
 
   .message-wrapper {
-    height: 200px;
+    height: 250px;
     background-color: #e7e7e7;
     opacity: 0.8;
     display: flex;
@@ -73,6 +72,7 @@ header {
       max-width: 250px;
       border-radius: 14px;
       background-color: #30e852;
+      box-shadow: 3px 5px 0px 0px #25b33f;
       font-size: 18px;
     }
 
@@ -83,6 +83,25 @@ header {
       right: -19px;
       border: 8px solid transparent;
       border-left: 18px solid #30e852;
+      -webkit-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+    }
+
+    & p:active {
+      background-color: #25b33f;
+      box-shadow: none;
+      position: relative;
+      top: 3px;
+      left: 5px;
+    }
+
+    & p:active:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: -19px;
+      border: 8px solid transparent;
+      border-left: 18px solid #25b33f;
       -webkit-transform: rotate(-35deg);
       transform: rotate(-35deg);
     }
