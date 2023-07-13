@@ -1,6 +1,8 @@
 import "./reset.css";
 import "./App.scss";
 import React, { useState } from "react";
+
+// icons
 import { IoIosArrowBack, IoIosCall } from "react-icons/io";
 import { HiOutlineSearch, HiMicrophone } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -8,7 +10,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { AiFillCamera, AiOutlinePicture, AiOutlineSmile } from "react-icons/ai";
 
 function App() {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   const classToggle = () => {
     setActive(!active);
