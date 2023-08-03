@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 
 * {
-  // max-width: 375px;
+  max-width: 375px;
   font-family: "Noto Sans", sans-serif;
-}
-
-body {
-  height: 100vh;
 }
 
 header {
@@ -84,8 +80,9 @@ header {
       position: absolute;
       top: 3px;
       right: -19px;
-      border: 5px solid transparent;
-      border-left: 20px solid #30e852;
+      transform: rotate(-35deg);
+      border: 8px solid transparent;
+      border-left: 18px solid #30e852;
       content: "";
 
       -webkit-transform: rotate(-35deg);
@@ -103,8 +100,9 @@ header {
       position: absolute;
       top: 3px;
       right: -19px;
-      border: 5px solid transparent;
-      border-left: 20px solid #25b33f;
+      transform: rotate(-35deg);
+      border: 8px solid transparent;
+      border-left: 18px solid #25b33f;
       content: "";
 
       -webkit-transform: rotate(-35deg);
